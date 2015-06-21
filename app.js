@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/weather', getWeather);
-app.use('/other-api'. function (req, res, next) {
+app.use('/other-api', function (req, res, next) {
   res.send("more api's coming");
 });
 

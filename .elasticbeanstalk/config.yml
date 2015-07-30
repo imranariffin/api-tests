@@ -1,0 +1,10 @@
+branch-defaults:
+  master:
+    environment: imran-api-tests-dev
+global:
+  application_name: imran-api-tests
+  default_ec2_keyname: null
+  default_platform: Node.js
+  default_region: ap-southeast-1
+  profile: eb-cli
+  sc: git

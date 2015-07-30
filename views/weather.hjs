@@ -9,18 +9,17 @@
     <p>Welcome to {{ title }}</p>
 
     <!-- USE MASHAPE -->
-    <form action="./post" method="POST">
+    <form action="/weather/post" method="POST">
       <input type="text" name="location">
     	<input type="submit" value="get weather">
     </form>
-
-    <p><b>Location: {{ location }}</b></p>
+      <p><b>Location: {{ location }}</b></p>
     <table>
-      {{#weatherList}}
+      {{#weatherList}}  
         <tr>
-          <td><b> Day: {{ day_of_week }}</b></td>
-          <td>High: {{ high_celcius }} Celcius</td>
-          <td>Low: {{ low_celcius }} Celcius</td>
+          <td> Day: <b>{{ day_of_week }}</b></td>
+          <td>High: <b>{{ high_celsius }}</b> Celcius</td>
+          <td>Low: <b>{{ low_celsius }}</b> Celcius</td>
           <td>Condition: {{ condition }}</td>
         </tr>
       {{/weatherList}}      
